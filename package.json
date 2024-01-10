@@ -1,0 +1,38 @@
+{
+  "name": "array-device",
+  "version": "1.0.8",
+  "description": "Handle your array objects with ease",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [
+    "array",
+    "reduce",
+    "intersection",
+    "select"
+  ],
+  "author": "patton",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/renleiabc/array-device.git"
+  },
+  "bugs": {
+    "url": "https://github.com/renleiabc/array-device/issues"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.9.0",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
+  }
+}

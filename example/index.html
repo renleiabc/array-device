@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="module">
+      import {
+        reduce,
+        intersection,
+        difference,
+        all,
+        part,
+        other
+      } from '../dist/index.js';
+      const arr = [
+        {
+          id: 1,
+          name: 'noah',
+          age: 18
+        },
+        {
+          id: 1,
+          name: 'mark',
+          age: 18
+        }
+      ];
+      console.log(reduce(arr));
+      let a = [
+        { id: 1, a: 123, b: 1234 },
+        { id: 2, a: 123, b: 1234 }
+      ];
+      let b = [
+        { id: 1, a: 123, b: 1234 },
+        { id: 2, a: 123, b: 1234 },
+        { id: 3, a: 123, b: 1234 },
+        { id: 4, a: 123, b: 1234 }
+      ];
+      let arr1 = [...b].filter((x) => [...a].some((y) => y.id === x.id));
+      console.log('arr', arr1);
+      console.log(JSON.stringify(difference(b, a, 'id')));
+      console.log(difference(a, b, 'id'));
+      let c = [1, 4];
+      console.log(part(b, c, 'id'));
+      let arr3 = b.filter((item) => {
+        //  item.select = c.some((el) => el === item.id);
+        return c.some((el) => el === item.id);
+      });
+      console.log(arr3);
+      // console.log(part(, c, 'id'));
+      let arr4 = b.filter((item) => {
+        return c.every((el) => el !== item.id);
+      });
+      console.log(arr4);
+      console.log(other(b, c, 'id'));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["es2016", "esnext", "dom"],
+    "module": "esnext",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["lib/*"]
+    },
+    "sourceMap": true,
+    "declaration": true,
+    "noEmitOnError": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "alwaysStrict": true,
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "strictNullChecks": true,
+    "removeComments": true
+  },
+  "include": ["lib/*","lib/**/*.ts","lib/**/*.d.ts",],
+  "exclude": ["node_modules", "./dist"]
+}
