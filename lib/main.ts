@@ -1,6 +1,5 @@
-interface itemType {
-  [name: string]: any;
-}
+type itemType = any;
+export const version = `version:1.0.9`;
 export const reduce = (arr: itemType[], key: string = 'id') => {
   const obj: { [key: string]: boolean } = {};
   const arrResult = arr.reduce(
@@ -61,4 +60,3 @@ export const other = (arr1: itemType[], arr2: itemType[], key: string) => {
   });
   return result;
 };
-export default { reduce, intersection, difference, all, part, other };

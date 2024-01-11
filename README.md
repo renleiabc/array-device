@@ -3,7 +3,7 @@ Handle your array objects with ease
 Install it
 
 ```
-npm install array-device
+pnpm install array-device
 ```
 
 Specific usage:
